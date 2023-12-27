@@ -7,8 +7,8 @@
 7. After succesfully import database tables, open any browser and type-->"http://localhost/scholarship/login.php".
 
 Admin:
-username: admin@gmail.com
-password: 123456
+1. username: admin@gmail.com
+2. password: 123456
 
 Note: For student login, you must register using "Register" link provided in the login page.
       For student, username is their email id and password is Roll number.
