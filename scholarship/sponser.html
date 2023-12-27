@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: #708090;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+</style>
+</head>
+<body>
+
+<form action="sponser.php" method="POST">
+  <div class="container">
+    <h1>SPONSERS</h1>
+    <p>Please add new sponsers</p>
+    <hr>
+
+	<label for="name"><b>Name</b></label><br></br>
+    <input type="text" placeholder="Enter Name" name="name"  id="name" style="height:40px;width:300px;"  required><br></br>
+	
+	<label for="occupation"><b>Occupation</b></label><br></br>
+    <input type="text" placeholder="Enter Occupation" name="Occ"  id="Occ" style="height:40px;width:300px;" required><br></br>
+	
+	<label for="Address"><b>Address</b></label><br><br/>
+	<textarea  rows="9" cols="38" name="ad"  id="ad"></textarea><br></br>
+	
+	
+	<label for="ph"><b>Phone Number</b></label><br></br>
+    <input type="int" placeholder="Enter Phone Number" name="ph"  id="ph" style="height:40px;width:300px;" required><br></br>
+	
+	<label for="amt"><b>Donation for Scholarship</b></label><br></br>
+    <input type="int" placeholder="Enter Ammount" name="amt"  id="amt" style="height:40px;width:300px;" required><br></br>
+	
+	<button type="submit" class="registerbtn" style="height:40px;width:300px;" >Submit</button><br></br>
+	<a href="admin.php">Back</a>
+  </div>
+  
+</form>
+
+</body>
+</html>
